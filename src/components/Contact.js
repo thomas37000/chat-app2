@@ -1,27 +1,10 @@
 import React from 'react';
+import ContactList from './ContactList';
 import './Contact.css';
 
-const image = "https://randomuser.me/api/portraits/men/84.jpg";
-const name = "nathan";
-const online = "online";
-
-function Contact() {
+function Contact(props) {
   return (
-    <div className="Contact">
-      <img className="avatar" 
-        src={image} alt="" />
-
-      <div className="status">
-        <h4>{name}</h4>
-        <div className="status-online">
-          
-        </div>
-        <div className="status-text">
-          {online} 
-        </div>
-        
-      </div>
-  </div>
+  <ContactList />
   );
 }
 
