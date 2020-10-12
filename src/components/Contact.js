@@ -1,31 +1,27 @@
 import React from 'react';
 import './Contact.css';
 
-// const image = $.ajax({
-//   url: 'https://randomuser.me/api/',
-//   dataType: 'json',
-//   success: function(data) {
-//     console.log(data);
-//   }
-// });
+const image = "https://randomuser.me/api/portraits/men/84.jpg";
+const name = "nathan";
+const online = "online";
 
 function Contact() {
   return (
     <div className="Contact">
-    
-  {/* {image} */}
-        <p>
-      
-        </p>
-        <a href="/#">
-        <img src="https://randomuser.me/api/" alt="" className="avatar"></img>
-        </a>
+      <img className="avatar" 
+        src={image} alt="" />
 
-        <a href="/#" className="status">
-          a
-        </a>
-      
-    </div>
+      <div className="status">
+        <h4>{name}</h4>
+        <div className="status-online">
+          
+        </div>
+        <div className="status-text">
+          {online} 
+        </div>
+        
+      </div>
+  </div>
   );
 }
 
