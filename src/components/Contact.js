@@ -4,15 +4,16 @@ import "./Contact.css";
 import PropTypes from 'prop-types';
 
 function Contact(props) {
+  const {image, firstName, lastName} = props;
   return (
     <div className="Contact">
       <img className="avatar" 
-        src={props.image} 
-        alt={props.firstName}  
+        src={image} 
+        alt={firstName}  
       />
 
-        <h4>{props.firstName}</h4>
-        <h4>{props.lastName}</h4>
+      <h4>{firstName} {lastName}</h4>
+      {/* <h4>{`${firstName} ${lastName}`}</h4> */}
     </div>
   );
 }
