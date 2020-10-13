@@ -5,11 +5,10 @@ import PropTypes from 'prop-types';
 
 function Contact(props) {
   return (
-    <div className="Contact" key={props.id}>
+    <div className="Contact">
       <img className="avatar" 
         src={props.image} 
-        alt={props.name} 
-        key={props.name} 
+        alt={props.name}  
       />
 
       <div className="status">
@@ -24,7 +23,7 @@ function Contact(props) {
 Contact.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  online: PropTypes.bool.isRequired
+  status: PropTypes.bool.isRequired
 };
 
 export default Contact;

@@ -50,7 +50,7 @@ const users =
 const ContactList = () => (
   <>
     {users.map(user => (
-      <Contact {...user} />
+      <Contact key={user.id} {...user} />
     ))}
   </>
 );
