@@ -5,8 +5,12 @@ import PropTypes from 'prop-types';
 
 function Contact(props) {
   return (
-    <div className="Contact">
-      <img className="avatar" src={props.image} alt={props.name} />
+    <div className="Contact" key={props.id}>
+      <img className="avatar" 
+        src={props.image} 
+        alt={props.name} 
+        key={props.name} 
+      />
 
       <div className="status">
         <h4>{props.name}</h4>

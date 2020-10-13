@@ -1,38 +1,15 @@
 import React from 'react';
 
 import './App.css';
-import Contact from './components/Contact';
+import ContactList from './components/ContactList';
 
-const users =  
-  [
-    {
-      image : "https://randomuser.me/api/portraits/men/84.jpg",
-      name : "nathan",
-      status : false
-    },
-    {
-      image : "https://randomuser.me/api/portraits/women/44.jpg",
-      name : "Sophie",
-      status : true
-    },
-    {
-      image : "https://randomuser.me/api/portraits/men/74.jpg",
-      name : "Drake",
-      status : true
-    }
-  ];
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-      {
-        users.map(user => 
-        (             
-          <Contact {...user} />
-        ))  
-      }
+        <ContactList />
       </header>
     </div>
   );
