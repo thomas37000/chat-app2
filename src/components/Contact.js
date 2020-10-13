@@ -8,22 +8,18 @@ function Contact(props) {
     <div className="Contact">
       <img className="avatar" 
         src={props.image} 
-        alt={props.name}  
+        alt={props.firstName}  
       />
 
-      <div className="status">
-        <h4>{props.name}</h4>
-        <div className={props.status ? "status-online" : "status-offline"}></div>
-        <div className="status-text">{props.status ? "online" : "offline"}</div>
-      </div>
+        <h4>{props.firstName}</h4>
+        <h4>{props.lastName}</h4>
     </div>
   );
 }
 
 Contact.propTypes = {
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  status: PropTypes.bool.isRequired
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
 };
 
 export default Contact;

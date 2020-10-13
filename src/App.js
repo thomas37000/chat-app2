@@ -1,13 +1,13 @@
 import React from 'react';
 
 import './App.css';
-import ContactList from './components/ContactList';
+import Avatar from './components/bart';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ContactList />
+        <Avatar />
       </header>
     </div>
   );
