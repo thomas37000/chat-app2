@@ -3,16 +3,19 @@ import React from "react";
 import "./Contact.css";
 import PropTypes from 'prop-types';
 
-function Contact(props) {
-  const {image, firstName, lastName} = props;
+// function Contact(props) {
+//   const {image, firstName, lastName, star} = props;
+
+const Contact = ({ image, firstName, lastName, star }) => {
+  
   return (
-    <div className="Contact">
+    <div className={star ? "star" : "noStar"}>
       <img className="avatar" 
-        src={image} 
-        alt={firstName}  
+        src={image ? image : "https://www.drupal.org/files/issues/default-avatar.png"} 
+        alt={firstName} 
       />
 
-      <h4>{firstName} {lastName}</h4>
+      <h4>{firstName} {lastName.toUpperCase()}</h4>
       {/* <h4>{`${firstName} ${lastName}`}</h4> */}
     </div>
   );
