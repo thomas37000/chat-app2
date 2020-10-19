@@ -1,15 +1,18 @@
 /* Component enclosing tag */
-
-/* .Contact {
+.Contact {
   padding: 1em;
   background: #555;
-  width: 250px;
+  width: 220px;
   display: flex;
   align-items: center;
-} */
+}
+
+.Contact:hover {
+  background: #777;
+}
 
 /* Contact image */
-.star .avatar {
+.Contact .avatar {
   border-radius: 50%;
   margin-right: 1em;
   width: 48px;
@@ -17,48 +20,42 @@
 }
 
 /* Name */
-.star .name {
+.Contact .name {
   margin: 0 0 0.25rem;
   color: #eee;
 }
 
 /* Status text */
-.star .status .status-text {
+.Contact .status .status-text {
   color: #999;
   margin: 0;
   display: inline-block;
 }
 
-h4 {
-  margin: 0;
+/* Status (rounded&colored indicator) */
+.Contact .status .status-online,
+.Contact .status .status-offline {
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
 }
 
-.star, .noStar{
-  padding: 1em;
-  background: #555;
-  width: 250px;
-  display: flex;
-  align-items: center;
+.Contact .status .status-online {
+  background: #aed581;
 }
 
-.noStar {
-  width: 30px;
-  background-color: #0CB1C4;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+.Contact .status .status-offline {
+  background: #f4511e;
 }
 
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+li {
+  list-style: none;
 }
 
-.noStar img {
-  width: 30px;
+button {
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
 }

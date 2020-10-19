@@ -7,43 +7,43 @@ const users =
       id: 1,
       image : "https://randomuser.me/api/portraits/men/84.jpg",
       name : "nathan",
-      status : false
+      online : false
     },
     {
       id: 2,
       image : "https://randomuser.me/api/portraits/women/44.jpg",
       name : "Sophie",
-      status : true
+      online : true
     },
     {
       id: 3,
       image : "https://randomuser.me/api/portraits/men/74.jpg",
       name : "Drake",
-      status : true
+      online : true
     },
     {
       id: 4,
       image : "https://randomuser.me/api/portraits/men/88.jpg",
       name : "Blake",
-      status : true
+      online : true
     },
     {
       id: 5,
       image : "https://randomuser.me/api/portraits/men/8.jpg",
       name : "Mortimer",
-      status : false
+      online : false
     },
     {
       id: 6,
       image : "https://randomuser.me/api/portraits/women/4.jpg",
       name : "Nathalie",
-      status : true
+      online : true
     },
     {
       id: 7,
       image : "https://randomuser.me/api/portraits/women/67.jpg",
       name : "Julie",
-      status : false
+      online : false
     }
   ];
 
@@ -54,4 +54,5 @@ const ContactList = () => (
     ))}
   </>
 );
+
 export default ContactList;
